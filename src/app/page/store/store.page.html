@@ -1,0 +1,26 @@
+<ion-content class="store">
+
+  <header class="store-header">
+    <h2>Nueva Colección</h2>
+    <p>Estilo urbano para todos</p>
+  </header>
+
+  <section class="productos">
+
+    <div class="producto" *ngFor="let item of productos">
+
+      <img [src]="item.img">
+      <div class="info">
+        <h3>{{ item.nombre }}</h3>
+        <span>${{ item.precio }}</span>
+      </div>
+
+      <ion-button fill="clear" class="btn-comprar">
+        Comprar
+      </ion-button>
+
+    </div>
+
+  </section>
+
+</ion-content>

@@ -1,0 +1,75 @@
+.store {
+  --background: linear-gradient(180deg, #0f0f0f, #1b1b1b);
+  color: #fff;
+}
+
+.store-header {
+  text-align: center;
+  padding: 25px 15px 15px;
+}
+
+.store-header h2 {
+  font-size: 26px;
+  letter-spacing: 2px;
+  background: linear-gradient(45deg, #ff3f81, #ffb347);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
+}
+
+
+.store-header p {
+  color: #ccc;
+  font-size: 14px;
+}
+
+/* GRID */
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  padding: 15px 15px 40px;
+}
+
+.producto {
+  background: linear-gradient(145deg, #202020, #111);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 25px rgba(0,0,0,.6);
+  transition: transform .3s;
+}
+
+.producto:hover {
+  transform: translateY(-6px);
+}
+
+.producto img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+
+.info {
+  padding: 12px;
+}
+
+.info h3 {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.info span {
+  color: #ff9f43;
+  font-weight: 600;
+}
+
+/* BOTÓN */
+
+.btn-comprar {
+  width: 100%;
+  --color: #ff2a6d;
+  font-weight: 700;
+}
